@@ -29,8 +29,9 @@ function App() {
               <hr></hr>
               <Routes>
                 <Route path={`${PATH}/`} index element={<Products />} />
+                <Route path={`${PATH}/Cart`}  element={<Cart />} />
                 <Route path={`${PATH}/order`} element={<Orders />} />
-                <Route path={`${PATH}/cart`} element={<Cart />} />
+               
               </Routes>
               <Footer />
             </Router>
