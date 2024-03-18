@@ -9,6 +9,7 @@ import { AppContextProvider } from "./context/appContext.js";
 import Logout from "./components/user/Logout.js";
 import Footer from "./components/footer/Footer.js";
 import Orders from "./components/order/Orders.js";
+import Product1 from "./components/product/Product1.js";
 
 export const UserContext = createContext(null);
 function App() {
@@ -31,12 +32,17 @@ function App() {
                 <Route path={`${PATH}/`} index element={<Products />} />
                 <Route path={`${PATH}/order`} element={<Orders />} />
                 <Route path={`${PATH}/cart`} element={<Cart />} />
+                <Route path={`${PATH}/Product1`} element={<Product1 />} />
+
               </Routes>
               <Footer />
             </Router>
           </AppContextProvider>
         {/* )} */}
       </UserContext.Provider>
+      <div className="app">
+      
+    </div>
     </div>
   );
 }
