@@ -9,3 +9,4 @@ export const AppContextProvider = (props) => {
   const val = { cartItems, setCartItems, products, orders,setOrders,nithin,setNithin };
   return <AppContext.Provider value={val}>{props.children}</AppContext.Provider>;
 };
+                                                                                
